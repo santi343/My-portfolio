@@ -21,6 +21,7 @@ body {
   font-family: "Roboto", sans-serif;
   /*color: #464646;*/
   margin: 0 auto;
+  max-width: 1500px;
 }
 
 /*GENERAL*/
@@ -286,76 +287,79 @@ main .proyects{
   margin: 20px auto;
   padding: 10px;
 }
-.proyects-container{
+main .proyects h2 {
+  text-align: center;
+  padding: 20px;
+}
+main .proyects-container{
   display: flex;
 }
-main .proyects-container div:first-child{
-  width: 30%;
+main .proyects-container aside{
+  width: 20%;
 }
-main .proyects-container div:last-child{
-  width: 70%;
+main .proyects-container div{
+  width: 100%;
+  /*margin:10px;*/
 }
-
-
-
-
-
-.contenedor {
-	max-width: 1000px;
-	width: 90%;
-	margin: auto;
-	display: flex;
-	justify-content: space-between;
-}
-main {
-	min-height: 100vh;
+main .proyects-Box{
+  display: flex;
+  flex-direction: column;
 }
 
-main .contenido p {
-	margin-bottom: 20px;
-	line-height: 30px;
-	color: #525151;
-}
-
-main .contenido .titulo {
-    font-family: 'Montserrat', sans-serif;
-	font-weight: normal;
-	padding-top: 40px;
-}
-
-main .contenido .fecha {
-	font-size: 14px;
-	color: #B5B5B5;
-}
-
-/* * ============================== */
-/* * ============ ASIDE =========== */
-/* * ============================== */
-
-aside {
-	min-width: 20%;
-	margin: 40px 20px 20px 0;
+main .proyects-container aside {
+	min-width: 10%;
+  margin: 40px 10px 10px 0;
 	height: 100%;
-	background: #1D2F3D;
   background: linear-gradient(to bottom, #00000050, #69acfd40 70%);
-	padding: 20px;
+	padding: 10px;
 	border-radius: 10px;
   position: sticky;
   top: 20px;
 }
 
-aside .titulo {
-	font-family: 'Montserrat', sans-serif;
-	font-weight: normal;
-	font-size: 24px;
-  text-align:center;
-	/*margin-bottom: 20px;*/
-	/*color: #f2f2f2;*/
+main .proyects-container aside .titulo {
+	font-family: 'Roboto', italic;
+	font-weight: bold;
+	font-size: 20px;
 }
 
-aside .indice a {
-	display: block;
-	margin-bottom: 10px;
-  text-align:center;
-	/*color: #FFCD48;*/
+main .proyects-container aside .indice a {
+  display: block;
+	margin-bottom: 5px;
+  font-size:15px;
+  font-weight:bold;
 }
+
+main .proyects-container .proyects-box{
+  display: flex;
+  margin: 10px 0;
+}
+main  .proyects-box div{
+  text-align:center;
+}
+main .proyects-box .div-img{
+  width:200% ;
+}
+main .proyects-box .div-description{
+  text-align:center;
+  width: 100%;
+}
+main .proyects-box .div-description h3{
+  margin-top: 0;
+}
+main .proyects-box img{
+  width: 100%;
+
+}
+.botones button{
+  margin: 5px;
+}
+
+
+
+
+
+/* * ============================== */
+/* * ============ ASIDE =========== */
+/* * ============================== */
+
