@@ -299,7 +299,7 @@ main .proyects-container aside{
 }
 main .proyects-container div{
   width: 100%;
-  /*margin:10px;*/
+  margin-top:15px;
 }
 main .proyects-Box{
   display: flex;
@@ -313,6 +313,7 @@ main .proyects-container aside {
   background: linear-gradient(to bottom, #00000050, #69acfd40 70%);
 	padding: 10px;
 	border-radius: 10px;
+  border: solid 2px #000000;
   position: sticky;
   top: 20px;
 }
@@ -349,6 +350,8 @@ main .proyects-box .div-description h3{
 }
 main .proyects-box img{
   width: 100%;
+  border-radius:10px;
+  border:solid 2px #000000;
 
 }
 .botones button{
