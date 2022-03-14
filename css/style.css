@@ -818,6 +818,9 @@ footer p {
     transition: all 1.5s;
   }
   /*training*/
+  .training__container div{
+    margin-right: 3px;
+  }
   .training__container h3 {
     font-size: 14px;
   }
@@ -873,8 +876,6 @@ footer p {
   }
   /*presentation*/
   .presentation {
-    display: flex;
-    /*align-items: flex-start;*/
     flex-direction: column;
     width: 80%;
     margin: 20px auto;
@@ -892,12 +893,12 @@ footer p {
     text-align: start;
   }
   .presentation p {
-    font-size: 12px;
+    font-size: 14px;
     text-align: start;
     margin: 0;
   }
   .presentation nav a {
-    font-size: 10px;
+    font-size: 11px;
   }
   /*about*/
   .about h2,
@@ -938,8 +939,9 @@ footer p {
   }
   /*training*/
   .training__container div {
-    margin-left: 15px;
-    margin-right: 15px;
+    /*margin-left: 15px;*/
+    /*margin-right: 15px;*/
+    margin: 0 auto;
   }
 
   .training__container h3 {
@@ -949,8 +951,8 @@ footer p {
     font-size: 12px;
   }
   .training img {
-    width: 120px;
-    height: 70px;
+    width: 150px;
+    height: 100px;
   }
   /*proyects*/
   .proyects__container aside {
@@ -990,11 +992,17 @@ footer p {
     margin-bottom: 20px;
   }
   /*contact*/
+  .contact h2{
+    margin: 15px auto;
+  }
+  .contact__formulario{
+    border: none;
+  }
   .contact__formulario-box {
-    width: 95%;
+    width: 100%;
   }
   .contact__formulario-box .contactarme {
-    font-size: 18px;
+    font-size: 16px;
   }
   .contact__formulario-box .contactarme1 {
     font-size: 14px;
@@ -1002,6 +1010,17 @@ footer p {
   .contact__formulario-box input,
   .contact__formulario-box textarea {
     width: 70%;
+  }
+  footer {
+    margin: 2% auto;
+    margin-top: 20px;
+  }
+  footer p {
+    padding-top: 10px;
+    font-size: 10px;
+  }
+  footer div{
+    font-size: 12px;
   }
 }
 
