@@ -606,7 +606,7 @@ a:hover span {
   color: white;
   background-color: #00000080;
   border-radius: 10px;
-  backdrop-filter: blur(12px);
+  backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(12px);
 }
 .contact__formulario-box .contactarme {
@@ -818,7 +818,7 @@ footer p {
     transition: all 1.5s;
   }
   /*training*/
-  .training__container div{
+  .training__container div {
     margin-right: 3px;
   }
   .training__container h3 {
@@ -888,17 +888,20 @@ footer p {
   .presentation div:last-child {
     width: 30%;
   }
+  .presentation div:last-child img {
+    width: 150%;
+  }
   .presentation h2 {
-    font-size: 18px;
+    font-size: 20px;
     text-align: start;
   }
   .presentation p {
-    font-size: 14px;
+    font-size: 16px;
     text-align: start;
     margin: 0;
   }
   .presentation nav a {
-    font-size: 11px;
+    font-size: 12px;
   }
   /*about*/
   .about h2,
@@ -992,10 +995,10 @@ footer p {
     margin-bottom: 20px;
   }
   /*contact*/
-  .contact h2{
+  .contact h2 {
     margin: 15px auto;
   }
-  .contact__formulario{
+  .contact__formulario {
     border: none;
   }
   .contact__formulario-box {
@@ -1019,7 +1022,7 @@ footer p {
     padding-top: 10px;
     font-size: 10px;
   }
-  footer div{
+  footer div {
     font-size: 12px;
   }
 }
