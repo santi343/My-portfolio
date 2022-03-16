@@ -595,12 +595,13 @@ a:hover span {
 .contact__formulario {
   width: 80%;
   background-image: url("../images/icons-6751206_1280.png");
+  /*background-image: url("../images/contact-us-1014232_1280.png");*/
   background-position: center center;
   background-clip: content-box;
   background-repeat: no-repeat;
   background-size: cover;
   border: solid 2px #000000;
-  background-color: #00000080;
+  background-color: #00000040;
   border-radius: 10px;
   margin: 0px auto;
 }
@@ -610,11 +611,15 @@ a:hover span {
   margin: 20px auto;
   padding: 20px;
   border-radius: 10px;
-  background-color: #00000080;
+  /*background-color: #00000040;*/
+  background: linear-gradient(to bottom,#00000010, #00000090 40% , #00000010);
   backdrop-filter: blur(4px);
   /*-webkit-backdrop-filter: blur(12px);*/
   font-weight: 500;
   line-height: 20px;
+}
+.contact__formulario-box input::placeholder {
+  color: #ffffff99;
 }
 .form__grupo-input,
 .form__grupo {
@@ -954,16 +959,18 @@ footer p {
     margin-bottom: 20px;
   }
   /*contact*/
-  /*.contact__formulario {*/
+  .contact__formulario {
     /*border: none;*/
-  /*}*/
+    /*background-color: none;*/
+  }
   .contact__formulario-box {
     width: 85%;
+    /*background-color: none;*/
   }
-  .form__grupo-input .form__input ,
+  .form__grupo-input .form__input,
   .form__input-error,
   .form__mensaje,
-  .form__mensaje-exito{
+  .form__mensaje-exito {
     width: 90%;
   }
   /*footer*/
