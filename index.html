@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/normalize.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.1.3/hamburgers.min.css"
+    />
     <link rel="stylesheet" href="./css/style.css" />
     <link
       rel="stylesheet"
@@ -11,6 +15,7 @@
     />
     <script src="./js/formulario.js" defer></script>
     <script src="./js/modal.js" defer></script>
+    <script src="./js/mobile.js" defer></script>
     <title>My-portfolio</title>
   </head>
 
@@ -24,7 +29,30 @@
         />
         <h1>Quispe Zacarías Santiago</h1>
       </div>
-      <nav>
+      <div id="mobile">
+        <i class="fa-solid fa-email-mobile fa-envelopes"></i>
+      </div>
+      <div class="mobile-absolute" id="mobile-absolute">
+        santiago1988quispep@gmail.com
+      </div>
+      <!--<div class="mobile">santiago1988quispep@gmail.com</div>-->
+
+      <button class="panel-btn hamburger hamburger--boring" type="button">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
+      <aside class="panel">
+        <nav class="menu">
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#hobbies">Hobbies</a>
+            <a href="#training">Training</a>
+            <a href="#proyects">Proyects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+      </aside>
+      <nav class="nav1">
         <ul>
           <li><a href="#about">About</a></li>
           <li><a href="#skills">Skills</a></li>
@@ -510,7 +538,6 @@
       </section>
 
       <section class="contact" id="contact">
-
         <h2>Contact</h2>
         <div class="contact__formulario">
           <div class="contact__formulario-box">
@@ -536,7 +563,7 @@
                   />
                 </div>
                 <p class="form__input-error">
-                NO debe de estar vacio, poseer números o caracteres raros.
+                  NO debe de estar vacio, poseer números o caracteres raros.
                 </p>
               </div>
 

@@ -31,6 +31,7 @@ leerMasPresupuesto.addEventListener("click", function () {
   cardPresupuesto.style.transform = " rotateY(180deg)";
 });
 leerMasPresupuesto.addEventListener("blur", function () {
+  console.log("desde presupuesto")
   setTimeout(() => {
     cardPresupuesto.style.transform = " rotateY(0deg)";
   }, 3000);
