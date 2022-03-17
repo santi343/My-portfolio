@@ -6,7 +6,8 @@ console.log(inputs);
 console.log(inputs.textarea);
 const expReg = {
   name: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, // Letras y espacios, pueden llevar acentos.
-  email: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
+  //email: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
+  email: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[com]$/,
   businnes: /^[0-9a-zñáéíóú"'?¿¡!.\s]{1,40}$/i, // Letras y espacios, pueden llevar acentos.
   messagge: /^[0-9a-zñáéíóú"'?¿¡!.\s]{1,500}$/i, // Letras y espacios, pueden llevar acentos.
   messagge2: /^[\s]*$/, // Letras y espacios, pueden llevar acentos.
