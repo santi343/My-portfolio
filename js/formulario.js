@@ -1,16 +1,15 @@
 const form = document.getElementById("form");
 const inputs = document.querySelectorAll("#form input");
 const input = document.querySelector("#form textarea");
-console.log(inputs);
+const btnReset = document.getElementById("btn-reset");
 
-console.log(inputs.textarea);
 const expReg = {
   name: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, // Letras y espacios, pueden llevar acentos.
   //email: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
-  email: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[com]$/,
+  email: /^[a-zA-Z0-9_.+-]+@[a-zA-Z]+\.[cC]{1}[oO]{1}[mM]{1}$/,
   businnes: /^[0-9a-zñáéíóú"'?¿¡!.\s]{1,40}$/i, // Letras y espacios, pueden llevar acentos.
   messagge: /^[0-9a-zñáéíóú"'?¿¡!.\s]{1,500}$/i, // Letras y espacios, pueden llevar acentos.
-  messagge2: /^[\s]*$/, // Letras y espacios, pueden llevar acentos.
+  messagge2: /^[\s]*$/, // no pueden tener espacios en blanco en el texto.
 };
 
 const campos = {
@@ -116,12 +115,10 @@ const validarTextarea = (e) => {
     campos["messagge"] = false;
   }
 };
+
 inputs.forEach((input) => {
-  console.log(input);
-  input.addEventListener("keyup", validarFormulario);
   input.addEventListener("blur", validarFormulario);
 });
-
 input.addEventListener("blur", validarTextarea);
 
 form.addEventListener("submit", (e) => {
@@ -156,4 +153,20 @@ form.addEventListener("submit", (e) => {
         .classList.remove("form__mensaje-activo");
     }, 5000);
   }
+});
+
+btnReset.addEventListener("click", function (e) {
+  e.preventDefault();
+  form.reset();
+  document.querySelectorAll(".form__grupo").forEach((icono) => {
+    icono.classList.remove("form__grupo-correcto");
+    icono.classList.remove("form__grupo-incorrecto");
+  });
+  document.querySelectorAll(".form__input-error").forEach((icono) => {
+    icono.classList.remove("form__input-error-activo");
+  });
+  campos.name = false;
+  campos.email = false;
+  campos.businnes = false;
+  campos.messagge = false;
 });

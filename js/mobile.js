@@ -30,21 +30,12 @@ emailMobile.addEventListener("click", function () {
     mobileAbsolute.style.display = "none";
   }
 });
-emailMobile.addEventListener("blur", function () {
-  //e.preventDefault();
+
+emailMobile.addEventListener("blur", function (e) {
+  e.preventDefault();
   console.log("hola desde aqui");
   setTimeout(() => {
-    //faEmailMobile.classList.remove("fa-rectangle-xmark");
-    //faEmailMobile.classList.add("fa-envelopes");
     mobileAbsolute.style.display = "block";
   }, 3000);
 });
 
-//let panelBtn = document.querySelector(".panel-btn");
-//let panel = document.querySelector(".panel");
-//let menuLink = document.querySelectorAll(".menu a");
-
-//panelBtn.addEventListener("click", function (e) {
-//panel.classList.add("is-active")
-////panel.classList.add("is-active")
-//});
