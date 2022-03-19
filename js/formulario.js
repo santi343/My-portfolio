@@ -5,10 +5,9 @@ const btnReset = document.getElementById("btn-reset");
 
 const expReg = {
   name: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, // Letras y espacios, pueden llevar acentos.
-  //email: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
   email: /^[a-zA-Z0-9_.+-]+@[a-zA-Z]+\.[cC]{1}[oO]{1}[mM]{1}$/,
   businnes: /^[0-9a-zñáéíóú"'?¿¡!.\s]{1,40}$/i, // Letras y espacios, pueden llevar acentos.
-  messagge: /^[0-9a-zñáéíóú"'?¿¡!.\s]{1,500}$/i, // Letras y espacios, pueden llevar acentos.
+  messagge: /^[0-9a-zñáéíóú"'?¿¡!.()\s]{50,500}$/i, // Letras y espacios, pueden llevar acentos.
   messagge2: /^[\s]*$/, // no pueden tener espacios en blanco en el texto.
 };
 
@@ -117,32 +116,67 @@ const validarTextarea = (e) => {
 };
 
 inputs.forEach((input) => {
+  input.addEventListener("keyup", validarFormulario);
   input.addEventListener("blur", validarFormulario);
 });
+input.addEventListener("keyup", validarTextarea);
 input.addEventListener("blur", validarTextarea);
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
 
   if (campos.name && campos.email && campos.businnes && campos.messagge) {
-    form.reset();
+    //form.reset();
 
-    document
-      .getElementById("form__mensaje-exito")
-      .classList.add("form__mensaje-exito-activo");
-    setTimeout(() => {
-      document
-        .getElementById("form__mensaje-exito")
-        .classList.remove("form__mensaje-exito-activo");
-    }, 5000);
+    //document
+    //.getElementById("form__mensaje-exito")
+    //.classList.add("form__mensaje-exito-activo");
 
-    document.querySelectorAll(".form__grupo-correcto").forEach((icono) => {
-      icono.classList.remove("form__grupo-correcto");
-    });
-    campos.name = false;
-    campos.email = false;
-    campos.businnes = false;
-    campos.messagge = false;
+    //setTimeout(() => {
+    //document
+    //.getElementById("form__mensaje-exito")
+    //.classList.remove("form__mensaje-exito-activo");
+    //}, 5000);
+    fetch("https://formsubmit.co/ajax/santiago1988quispep@gmail.com", {
+    //fetch("https://formsubmit.co/el/xijeju", {
+      method: "POST",
+      body: new FormData(e.target),
+    })
+      .then((res) => (res.ok ? res.json() : Promise.reject(res)))
+      .then((json) => {
+        console.log(json);
+        form.reset();
+
+        document
+          .getElementById("form__mensaje-exito")
+          .classList.add("form__mensaje-exito-activo");
+
+        setTimeout(() => {
+          document
+            .getElementById("form__mensaje-exito")
+            .classList.remove("form__mensaje-exito-activo");
+        }, 5000);
+
+        document.querySelectorAll(".form__grupo-correcto").forEach((icono) => {
+          icono.classList.remove("form__grupo-correcto");
+        });
+        campos.name = false;
+        campos.email = false;
+        campos.businnes = false;
+        campos.messagge = false;
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+    //document.addEventListener("DOMContentLoaded", contactForm)
+
+    //document.querySelectorAll(".form__grupo-correcto").forEach((icono) => {
+    //icono.classList.remove("form__grupo-correcto");
+    //});
+    //campos.name = false;
+    //campos.email = false;
+    //campos.businnes = false;
+    //campos.messagge = false;
   } else {
     document
       .getElementById("form__mensaje")

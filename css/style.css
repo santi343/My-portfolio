@@ -16,9 +16,7 @@ html {
 }
 body {
   background-image: url("../images/brushed_alu.png");
-  /*scroll-behavior: smooth;*/
   font-family: "Roboto", sans-serif;
-  /*color: #464646;*/
   margin: 0 auto;
   max-width: 1800px;
 }
@@ -182,8 +180,8 @@ header .menu a {
 }
 
 /*header .menu a:hover {*/
-  /*font-weight: bold;*/
-  /*color: #ffffff;*/
+/*font-weight: bold;*/
+/*color: #ffffff;*/
 /*}*/
 
 /*header-header*/
@@ -297,7 +295,6 @@ a:hover span {
 /*.about*/
 .about {
   background: linear-gradient(to bottom, #00000020 10%, #69acfd50 90%);
-  backdrop-filter: blur(50px);
   margin: 20px 0;
   padding: 40px 0;
 }
@@ -490,7 +487,6 @@ a:hover span {
 }
 .training {
   background: linear-gradient(to bottom, #00000020 10%, #69acfd50 90%);
-  backdrop-filter: blur(50px);
 }
 .training__container {
   width: 80%;
@@ -743,7 +739,6 @@ a:hover span {
 .contact {
   margin: 0 auto;
   background: linear-gradient(to bottom, #00000020 10%, #69acfd50 90%);
-  backdrop-filter: blur(12px);
   padding: 5px 0 80px;
 }
 .contact h2 {
@@ -800,6 +795,7 @@ a:hover span {
   box-shadow: 3px 0px 30px rgba(163, 163, 163, 0.4);
 }
 .form__grupo-input textarea {
+  font-size: 18px;
   resize: none;
   height: 150px;
   line-height: 25px;
