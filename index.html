@@ -8,12 +8,12 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.1.3/hamburgers.min.css"
     />
-    <link rel="stylesheet" href="./css/style.css" />
     <link
       rel="stylesheet"
       href="https://pro.fontawesome.com/releases/v6.0.0-beta2/css/all.css"
     />
 
+    <link rel="stylesheet" href="./css/style.css" />
     <link rel="shortcut icon" href="./images/portfolio.png" />
     <script src="./js/formulario.js" defer></script>
     <script src="./js/modal.js" defer></script>
@@ -267,7 +267,7 @@
               <div class="proyects__container-box-box-img">
                 <img
                   class="img-proyect img-p1"
-                  src="./images/ahorcado.png"
+                  src="./images/presupuesto.png"
                   alt=""
                 />
               </div>
@@ -281,7 +281,6 @@
                         <h3>Presupuesto</h3>
                         <p>
                           <i class="fa-brands fa-react"></i>
-                          <i class="fa-regular fa-database"></i>
                         </p>
                         <button
                           class="body__card-front-leer-mas"
@@ -304,8 +303,9 @@
                       <div class="bg1"></div>
                       <div class="body__card_back">
                         <p>
+                          Administrá tu gasto Semanal.<br />
                           Proyecto desarrollado de forma autodidacta.<br />Tecnologías
-                          Aplicadas: React y Firebase.
+                          Aplicadas: React.
                         </p>
                         <button
                           class="body__card_back-volver"
@@ -368,6 +368,7 @@
                       <div class="bg1"></div>
                       <div class="body__card_back">
                         <p>
+                          Intentá no perder en el Juego al ahorcado.<br />
                           Proyecto 2° Alura Challenge | OracleOne.<br />Tecnologías
                           Aplicadas: Html5, CSS3 y JavaScript.
                         </p>
@@ -432,6 +433,7 @@
                       <div class="bg1"></div>
                       <div class="body__card_back">
                         <p>
+                          Podes Encriptar y Desencriptar un Mensaje.<br />
                           Proyecto 1° Alura Challenge | OracleOne.<br />Tecnologías
                           Aplicadas: Html5, CSS3 y JavaScript.
                         </p>
@@ -491,6 +493,8 @@
                       <div class="bg1"></div>
                       <div class="body__card_back">
                         <p>
+                          Conocé las distintas Atracciones del parque del
+                          Terror.<br />
                           Proyecto Integrador de la 2° Etapa Argentina
                           Programa.<br />Tecnologías Aplicadas: Java,
                           JavaScript, JSP, CSS3, Maven y Sqlite3 (MVC).
@@ -552,6 +556,7 @@
                       <div class="bg1"></div>
                       <div class="body__card_back">
                         <p>
+                          Ecommerce de Productos Informáticos.<br />
                           Proyecto Integrador de Digital House.<br />Tecnologías
                           Aplicadas: JavaScript, Express.js, CSS3, Node.js,
                           Sequelize y MySQL. (MVC).
@@ -635,7 +640,8 @@
                   />
                 </div>
                 <p class="form__input-error">
-                  NO debe estar vacío, poseer caracteres raros o superar los 40 caracteres. 
+                  NO debe estar vacío, poseer caracteres raros o superar los 40
+                  caracteres.
                 </p>
               </div>
 
@@ -669,12 +675,21 @@
               <div class="form__grupo form__grupo-btn-submit">
                 <div class="form_btns">
                   <button type="submit" class="form_btn">Enviar</button>
+
                   <button type="submit" class="form_btn" id="btn-reset">
                     Reset
                   </button>
                 </div>
+                <img
+                  class="form_email"
+                  src="./images/mail.gif"
+                  alt="img-main-envio"
+                />
                 <p class="form__mensaje-exito" id="form__mensaje-exito">
                   Formulario enviado exitosamente!
+                </p>
+                <p class="form__mensaje-error" id="form__mensaje-error">
+                  Ocurrió un error al enviar, intenta nuevamente.
                 </p>
               </div>
             </form>
