@@ -10,7 +10,6 @@ function hamburgerMenu(panelBtn, panel, menuLink) {
     if (e.target.matches(panelBtn) || e.target.matches(`${panelBtn} *`)) {
       document.querySelector(panel).classList.toggle("is-active");
       document.querySelector(panelBtn).classList.toggle("is-active");
-      //document.querySelector(panelBtn).style.borderRadius = "50%";
     }
     if (e.target.matches(menuLink)) {
       document.querySelector(panel).classList.remove("is-active");
@@ -33,9 +32,7 @@ emailMobile.addEventListener("click", function () {
 
 emailMobile.addEventListener("blur", function (e) {
   e.preventDefault();
-  console.log("hola desde aqui");
   setTimeout(() => {
     mobileAbsolute.style.display = "block";
   }, 3000);
 });
-

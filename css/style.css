@@ -179,11 +179,6 @@ header .menu a {
   transition: all 0.3s ease;
 }
 
-/*header .menu a:hover {*/
-/*font-weight: bold;*/
-/*color: #ffffff;*/
-/*}*/
-
 /*header-header*/
 header,
 header div,
@@ -836,6 +831,13 @@ a:hover span {
   cursor: pointer;
   transition: 0.1s ease all;
 }
+.form_email{
+  width: 10%;
+  margin: 16px auto 20px;
+  padding:10px;
+  border-radius: 20px;
+  display:none;
+}
 .form_btn:hover {
   box-shadow: 3px 0px 30px rgba(163, 163, 163, 1);
 }
@@ -850,7 +852,21 @@ a:hover span {
   border-radius: 10px;
   display: none;
 }
+.form__mensaje-error {
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: #ffffff;
+  text-align: center;
+  background-color: #00000050;
+  background-color: #ff000060;
+  padding: 10px;
+  border-radius: 10px;
+  display: none;
+}
 .form__mensaje-exito-activo {
+  display: block;
+}
+.form__mensaje-error-activo {
   display: block;
 }
 .form__mensaje-activo {
@@ -887,6 +903,10 @@ footer {
 }
 footer p {
   padding-top: 10px;
+  font-size: 14px;
+}
+footer div {
+  font-size: 16px;
 }
 
 /* ----- -----  Mediaqueries ----- ----- */
@@ -1206,8 +1226,3 @@ footer p {
     font-size: 12px;
   }
 }
-
-/*
- * Proyects card
- * *ver el tema de icono de email en el header mobile/
- * */
