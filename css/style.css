@@ -267,6 +267,7 @@ a:hover span {
   font-weight: 700;
   text-align: center;
 }
+
 .presentation p {
   font-size: 20px;
   font-family: "Reboto", italic;
@@ -1065,8 +1066,6 @@ footer div {
     width: 30%;
   }
   .presentation div:last-child img {
-    /*previo 150*/
-    /*width: 190%;*/
     width: 170%;
   }
   .presentation h2 {
